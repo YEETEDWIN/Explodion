@@ -195,7 +195,7 @@ function speakThis(message) {
     else if (message.includes('check the weather') || message.includes('what is the weather') || message.includes('what is the temperature')) {
       //FIXME: What is the weather and what is the temperature methods are NOT WORKING
       
-      const apiKey = 'f4dc5f1fdf6f60490cbe65cfa20fcf28';
+      const apiKey = 'YOUR_API_KEY';
       const cityRegex = /(in|for|at)\s+([a-zA-Z\s]+)/i;
       const match = message.match(cityRegex);
   
@@ -458,7 +458,7 @@ function speakThis(message) {
 
     else {
         // Use ChatGPT to convert the user's message into a question and get a response.
-        const chatGPTApiKey = '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';
+        const chatGPTApiKey = 'YOUR_API_KEY';
         const chatGPTApiUrl = 'https://api.openai.com/v1/chat/completions';
     
         const convertToQuestionAndSpeak = async (message) => {
